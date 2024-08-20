@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positive Negitive Number</title>
+</head>
+
+    <script>
+        function check()
+        {
+            let value = document.getElementById('data').value;
+
+            if(value > 0){
+                res = `${value} is positive number`
+            }
+            else if(value < 0){
+                res = `${value} is negtive number`;
+            }
+            else if(value == 0){
+                res = `${value} is Zero`;
+            }
+            else{
+            res = `${value} is not number`;
+            }
+            document.getElementById('res').innerText = res;
+        }
+    </script>
+
+<body>
+    
+    <input type="number" placeholder="Enter number" id="data">
+    <button onclick="check()">Check</button>
+    <h2 id="res"></h2>
+</body>
+</html>

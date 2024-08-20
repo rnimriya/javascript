@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>celsius to fahrenheit | Java Script | HTMLKICK.COM</title>
+    <style>
+        body{ background: #080899;}
+        .wrapper{max-width:800px; margin: 70px auto; border: 1px dotted #9e7777; padding: 50px; box-shadow: 4px 3px 8px #1c1c1c; border-radius: 8px;background: #ffffff;}
+        input{padding: 0px 12px; border-radius: 6px; height: 40px; width: 400px;}
+        button{padding: 0px 12px; background-color: coral; border: none; font-weight: bold; border-radius: 6px; height: 44px;}
+    </style>
+</head>
+
+<script>
+
+    function celFarnhe (){
+        let c = document.getElementById('data').value;
+        const f = (c * 1.8) + 32;
+        document.getElementById('res').innerText = `${c} C = ${f} F`;
+    }
+
+
+</script>
+
+<body>
+
+    <div class="wrapper" >
+        <input name="" placeholder="Enter value in number" id="data" >
+        <button onclick="(celFarnhe())"> celsius to fahrenheit </button>
+        <h2 id="res"></h2>
+    </div>  
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kms to miles Convert | Java Script | HTMLKICK.COM</title>
+
+    <script>
+
+        function convertMiles (){
+        let kmdata = document.getElementById('kmdata').value;
+        const factor = 0.621373; 
+        let miles = factor * kmdata;
+        document.getElementById('convertedMiles').innerText= miles + ' Miles' 
+
+        }
+    
+    </script>
+
+</head>
+
+<body>
+
+    <input type="number" name="" placeholder="Enter value in kms" id="kmdata" >
+    <button onclick="(convertMiles())">Convert Miles</button>
+    <h2 id="convertedMiles"></h2>
+
+</body>
+</html>
