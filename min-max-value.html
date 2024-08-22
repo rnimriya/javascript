@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min and Max Value | Java Script | HTMLKICK.COM</title>
+</head>
+<script>
+
+function getminmax(array){
+
+    let min = array[0]
+    let max = array[0]
+
+    for (let index = 0; index < array.length; index++) {
+    
+     if (array[index] > max) {
+        max=array[index]  
+     }
+
+     if (array[index] < min) {
+        min=array[index]  
+     }
+        
+    }
+
+console.log(`${max} is maximum value`);
+console.log(`${min} is maximum value`);
+
+}
+
+getminmax([34,43,65,46,23]);
+
+</script>
+<body>
+    
+</body>
+</html>

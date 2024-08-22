@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number | Java Script | HTMLKICK.COM</title>
+
+    <script>
+         
+         let number= prompt('Please enter a number');
+
+         if (number==1) {
+            console.log(`${number} is neither prime nor composite`)
+         } 
+         else if (number < 1) {
+            console.log(`${number} is not prime number`)
+         } else {
+            for(var i=2; i<number; i++){
+                if(number%i==0){
+                  let res = console.log(`${number} is not prime number`)
+                  break;
+                }
+                else {
+                    let res = console.log(`${number} is  prime number`)
+                }
+                
+            }
+
+         }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
